@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b3f2a">
+  <title>La Casa del Cuore – Benvenuti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+    PAGINA UNICA per tutte le lingue.
+    Il testo qui sotto è il fallback italiano: script/i18n.js lo sostituisce con la
+    lingua scelta caricando i18n/<lang>.json. Gli elementi con testo tradotto sono
+    marcati con data-i18n="chiave" (contenuto) o data-i18n-alt="chiave" (attributo alt).
+    Modificare i testi in i18n/it.json (e nelle altre lingue).
+  -->
+
+  <div class="lang-select-wrap">
+    <select class="lang-select" aria-label="Lingua / Language">
+      <option value="it">🇮🇹 Italiano</option>
+    </select>
+  </div>
+
+  <header>
+    <div class="logo" role="img" aria-label="Logo La Casa del Cuore" data-i18n-alt="alt_logo"></div>
+    <div class="header-subtitle" data-i18n="header_subtitle">Taranto · Benvenuti</div>
+  </header>
+
+  <main hidden>
+
+    <p class="welcome" data-i18n="welcome_html">
+      Benvenuti alla <strong>Casa del Cuore</strong>! Siamo felici di ospitarvi nel cuore di Taranto. Qui sotto trovate
+      tutto ciò che serve per arrivare e entrare in casa in autonomia.
+    </p>
+
+    <ul class="facts">
+      <li><span class="facts-icon">🏠</span>
+        <span class="facts-label" data-i18n="facts_apt_label">Appartamento</span>
+        <span class="facts-value" data-i18n="facts_apt_value">Terzo piano, interno A</span></li>
+      <li><span class="facts-icon">📍</span>
+        <span class="facts-label" data-i18n="facts_city_label">Dove</span>
+        <span class="facts-value" data-i18n="facts_city_value">Taranto</span></li>
+      <li><span class="facts-icon">🅿️</span>
+        <span class="facts-label" data-i18n="facts_park_label">Parcheggio</span>
+        <span class="facts-value" data-i18n="facts_park_value">Nessun parcheggio privato</span></li>
+    </ul>
+
+    <section class="step">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h2 class="step-title" data-i18n="step1_title">Arrivo</h2>
+      </div>
+      <div class="step-body">
+        <p data-i18n="step1_p1_html">L'appartamento si trova a <strong>Taranto</strong> — <a href="#">apri la posizione in Google Maps</a>.</p>
+        <figure class="photo-block">
+          <img src="img/vista_esterno.png" alt="Il palazzo visto dalla strada" data-i18n-alt="alt_building"
+            loading="lazy" onerror="this.parentElement.style.display='none'">
+          <figcaption data-i18n="cap_building">Il palazzo visto dalla strada</figcaption>
+        </figure>
+        <div class="callout">
+          <div class="icon">🚫</div>
+          <div class="text" data-i18n="warn_parking_html"><strong>La casa non dispone di un parcheggio privato.</strong>
+            Potete parcheggiare nelle strade vicine, rispettando la segnaletica.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2 class="step-title" data-i18n="step2_title">Il portone</h2>
+      </div>
+      <div class="step-body">
+        <p data-i18n="step2_p1_html">Il condominio ha un portone sulla strada. <strong>Di giorno, tranne la domenica,
+            il portone è aperto e sorvegliato da un portiere</strong>: entrate pure e passate direttamente al passo
+          successivo.</p>
+        <div class="callout callout-info">
+          <div class="icon">🔑</div>
+          <div class="text" data-i18n="step2_note_html"><strong>Il locker esterno vi serve solo se il portone è
+              chiuso</strong>: di sera, di notte e la domenica.</div>
+        </div>
+        <figure class="photo-block">
+          <span class="photo-badge" data-i18n="badge_out">Solo se il portone è chiuso</span>
+          <img src="img/locker-esterno.jpeg" alt="Locker esterno agganciato al cancello" data-i18n-alt="alt_locker_out"
+            loading="lazy" onerror="this.parentElement.style.display='none'">
+          <figcaption data-i18n="cap_locker_out">Locker esterno — solo fuori orario e la domenica</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h2 class="step-title" data-i18n="step3_title">L'appartamento</h2>
+      </div>
+      <div class="step-body">
+        <p data-i18n="step3_p1_html">Salite al <strong>terzo piano</strong> e cercate l'<strong>interno A</strong>.</p>
+        <p data-i18n="step3_p2_html">Accanto alla porta trovate il <strong>locker interno</strong>.</p>
+        <figure class="photo-block">
+          <img src="img/locker-interno.jpeg" alt="Locker interno con tastierino" data-i18n-alt="alt_locker_in"
+            loading="lazy" onerror="this.parentElement.style.display='none'">
+          <figcaption data-i18n="cap_locker_in">Locker interno — terzo piano, interno A</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="contact-box">
+      <h3 data-i18n="contact_title">Avete bisogno di aiuto?</h3>
+      <p data-i18n="contact_p_html">Siamo a vostra disposizione su WhatsApp.</p>
+      <p class="contact-footer" data-i18n="contact_footer">Vi auguriamo un soggiorno meraviglioso. Grazie per aver
+        scelto la Casa del Cuore!</p>
+    </div>
+
+  </main>
+
+  <script src="script/config.js"></script>
+  <script src="script/i18n.js"></script>
+</body>
+
+</html>
