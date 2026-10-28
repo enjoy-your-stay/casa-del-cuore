@@ -6,7 +6,7 @@
   "facts_apt_label": "Appartamento",
   "facts_apt_value": "Terzo piano, interno A",
   "facts_city_label": "Dove",
-  "facts_city_value": "Via Lucania 66, Taranto",
+  "facts_city_value": "{address}",
   "facts_park_label": "Parcheggio",
   "facts_park_value": "Nessun parcheggio privato",
   "step1_title": "Arrivo e Parcheggio",

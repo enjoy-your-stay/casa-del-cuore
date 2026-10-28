@@ -39,6 +39,7 @@
     var stored;
     try { stored = localStorage.getItem('lang'); } catch (e) { stored = null; }
     var browser = (navigator.language || '').slice(0, 2).toLowerCase();
+    if (browser === 'nb' || browser === 'nn') browser = 'no';
     var candidates = [qs, stored, browser, FALLBACK];
     for (var i = 0; i < candidates.length; i++) {
       if (candidates[i] && available.indexOf(candidates[i]) !== -1) return candidates[i];
