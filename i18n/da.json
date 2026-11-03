@@ -25,6 +25,9 @@
   "step3_p2_html": "Ved siden af døren finder I en <strong>nøglebox</strong> monteret på væggen. Indtast den kode, vi har sendt jer, for at åbne den og tage <strong>lejlighedens nøgler</strong> sammen med en <strong>portnøgle</strong>. Ved siden af sidder dørklokken.",
   "cap_locker_in": "Boks indendørs — 3. sal, lejlighed A",
   "alt_locker_in": "Nøglebox indendørs med tastatur, ved siden af dørklokken",
+  "step3_p3_html": "<strong>Lejlighedens dør har to låse: brug den nederste.</strong>",
+  "step4_title": "Når I er kommet ind",
+  "step4_p1_html": "Lige når I kommer ind, finder I en dør til <strong>venstre</strong>: den er <strong>låst og videoovervåget indefra</strong> og <strong>hører ikke til boligen</strong>.",
   "contact_title": "Brug for hjælp?",
   "contact_p_html": "Vi er altid tilgængelige. Kontakt os endelig, hvis I har brug for noget.",
   "contact_footer": "Vi ønsker jer et vidunderligt ophold. Tak, fordi I valgte os!"
