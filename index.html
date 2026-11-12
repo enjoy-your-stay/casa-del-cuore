@@ -5,133 +5,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#6b3f2a">
-  <title>La Casa del Cuore – Benvenuti</title>
+
+  <title>La Casa del Cuore – Appartamento a Taranto centro, vicino al Tribunale</title>
+  <meta name="description" content="Appartamento nel centro di Taranto, vicino al Tribunale e allo Stadio del Nuoto Torre d'Ayala. Zona commerciale con negozi e mercato della frutta. Self check-in.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://enjoy-your-stay.github.io/casa-del-cuore/">
+
+  <!-- Anteprima quando il link viene condiviso (WhatsApp, Facebook, ...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="La Casa del Cuore">
+  <meta property="og:title" content="La Casa del Cuore – Appartamento a Taranto centro, vicino al Tribunale">
+  <meta property="og:description" content="Appartamento nel centro di Taranto, vicino al Tribunale e allo Stadio del Nuoto Torre d'Ayala. Zona commerciale con negozi e mercato della frutta. Self check-in.">
+  <meta property="og:url" content="https://enjoy-your-stay.github.io/casa-del-cuore/">
+  <meta property="og:image" content="https://enjoy-your-stay.github.io/casa-del-cuore/assets/img/foto/01-soggiorno.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <!-- Dati strutturati: aiutano Google a capire che è un alloggio e dove si trova -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "name": "La Casa del Cuore",
+    "description": "Appartamento nel centro di Taranto gestito da Lucia e Marco, vicino al Tribunale e allo Stadio del Nuoto Torre d'Ayala, in una zona commerciale con negozi e mercato della frutta.",
+    "url": "https://enjoy-your-stay.github.io/casa-del-cuore/",
+    "image": "https://enjoy-your-stay.github.io/casa-del-cuore/assets/img/foto/01-soggiorno.jpg",
+    "telephone": "+39 347 430 0269",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Lucania 66",
+      "addressLocality": "Taranto",
+      "addressRegion": "TA",
+      "addressCountry": "IT"
+    },
+    "sameAs": ["https://www.booking.com/hotel/it/la-casa-del-cuore-taranto.it.html"]
+  }
+  </script>
 </head>
 
 <body>
-  <!--
-    PAGINA UNICA per tutte le lingue.
-    Il testo qui sotto è il fallback italiano: script/i18n.js lo sostituisce con la
-    lingua scelta caricando i18n/<lang>.json. Gli elementi con testo tradotto sono
-    marcati con data-i18n="chiave" (contenuto) o data-i18n-alt="chiave" (attributo alt).
-    Modificare i testi in i18n/it.json (e nelle altre lingue).
-  -->
 
-  <div class="lang-select-wrap">
-    <select class="lang-select" aria-label="Lingua / Language">
-      <option value="it">🇮🇹 Italiano</option>
-    </select>
-  </div>
-
-  <header>
-    <div class="logo" role="img" aria-label="Logo La Casa del Cuore" data-i18n-alt="alt_logo"></div>
-    <div class="header-subtitle" data-i18n="header_subtitle">Taranto · Benvenuti</div>
+  <header class="hero">
+    <div class="hero-inner">
+      <!-- Il titolo è il logo stesso: per Google e per i lettori di schermo vale il testo alternativo -->
+      <h1><img class="hero-logo" src="assets/img/logo.jpeg" alt="La Casa del Cuore" width="1280" height="905"></h1>
+      <p class="hero-tagline">Il vostro appartamento nel cuore di Taranto</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/393474300269" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.2 1.8.8 2.5.8 3.4.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Scrivici su WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+393474300269"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Chiama 347 430 0269</a>
+      </div>
+    </div>
   </header>
 
-  <main hidden>
+  <main>
 
-    <p class="welcome" data-i18n="welcome_html">
-      Benvenuti alla <strong>Casa del Cuore</strong>! Siamo felici di ospitarvi nel cuore di Taranto. Qui sotto trovate
-      tutto ciò che serve per arrivare e entrare in casa in autonomia.
-    </p>
+    <section class="section" id="foto" aria-labelledby="foto-title">
+      <h2 id="foto-title">Le foto</h2>
+      <p class="section-lead">Toccate una foto per ingrandirla e sfogliarle tutte.</p>
 
-    <ul class="facts">
-      <li><span class="facts-icon">🏠</span>
-        <span class="facts-label" data-i18n="facts_apt_label">Appartamento</span>
-        <span class="facts-value" data-i18n="facts_apt_value">Terzo piano, interno A</span></li>
-      <li><span class="facts-icon">📍</span>
-        <span class="facts-label" data-i18n="facts_city_label">Dove</span>
-        <span class="facts-value" data-i18n="facts_city_value">Taranto</span></li>
-      <li><span class="facts-icon">🅿️</span>
-        <span class="facts-label" data-i18n="facts_park_label">Parcheggio</span>
-        <span class="facts-value" data-i18n="facts_park_value">Nessun parcheggio privato</span></li>
-    </ul>
-
-    <section class="step">
-      <div class="step-header">
-        <div class="step-number">1</div>
-        <h2 class="step-title" data-i18n="step1_title">Arrivo</h2>
-      </div>
-      <div class="step-body">
-        <p data-i18n="step1_p1_html">L'appartamento si trova a <strong>Taranto</strong> — <a href="https://www.google.com/maps/search/?api=1&query=Via+Lucania+66+Taranto" target="_blank" rel="noopener">apri la posizione in Google Maps</a>.</p>
-        <figure class="photo-block">
-          <img src="img/vista_esterno.jpg" alt="Il palazzo visto dalla strada" data-i18n-alt="alt_building"
-            loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption data-i18n="cap_building">Il palazzo visto dalla strada</figcaption>
-        </figure>
-        <div class="callout">
-          <div class="icon">🚫</div>
-          <div class="text" data-i18n="warn_parking_html"><strong>La casa non dispone di un parcheggio privato.</strong>
-            Potete parcheggiare nelle strade vicine, rispettando la segnaletica.</div>
-        </div>
+      <!--
+        GALLERIA. Ogni foto è un <a> verso l'immagine grande con dentro la miniatura;
+        assets/js/gallery.js la trasforma in un nastro che scorre da solo.
+        Il blocco tra GALLERY:START e GALLERY:END viene rigenerato da
+        tools/prepare_photos.py: per aggiungere foto usate lo script.
+      -->
+      <div class="carousel">
+      <ul class="gallery">
+        <!-- GALLERY:START -->
+        <li><a href="assets/img/foto/01-soggiorno.jpg" data-caption="Soggiorno"><img src="assets/img/foto/thumb/01-soggiorno.jpg" srcset="assets/img/foto/thumb/01-soggiorno.jpg 640w, assets/img/foto/01-soggiorno.jpg 1024w" sizes="50vw" alt="Soggiorno" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/02-soggiorno-con-tv-e-libreria.jpg" data-caption="Soggiorno con TV e libreria"><img src="assets/img/foto/thumb/02-soggiorno-con-tv-e-libreria.jpg" srcset="assets/img/foto/thumb/02-soggiorno-con-tv-e-libreria.jpg 640w, assets/img/foto/02-soggiorno-con-tv-e-libreria.jpg 1024w" sizes="50vw" alt="Soggiorno con TV e libreria" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/03-cucina.jpg" data-caption="Cucina"><img src="assets/img/foto/thumb/03-cucina.jpg" srcset="assets/img/foto/thumb/03-cucina.jpg 640w, assets/img/foto/03-cucina.jpg 1024w" sizes="50vw" alt="Cucina" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/04-cucina-attrezzata.jpg" data-caption="Cucina attrezzata"><img src="assets/img/foto/thumb/04-cucina-attrezzata.jpg" srcset="assets/img/foto/thumb/04-cucina-attrezzata.jpg 640w, assets/img/foto/04-cucina-attrezzata.jpg 1024w" sizes="50vw" alt="Cucina attrezzata" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/05-cucina-con-forno.jpg" data-caption="Cucina con forno"><img src="assets/img/foto/thumb/05-cucina-con-forno.jpg" srcset="assets/img/foto/thumb/05-cucina-con-forno.jpg 360w, assets/img/foto/05-cucina-con-forno.jpg 432w" sizes="50vw" alt="Cucina con forno" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/06-camera-matrimoniale.jpg" data-caption="Camera matrimoniale"><img src="assets/img/foto/thumb/06-camera-matrimoniale.jpg" srcset="assets/img/foto/thumb/06-camera-matrimoniale.jpg 640w, assets/img/foto/06-camera-matrimoniale.jpg 1024w" sizes="50vw" alt="Camera matrimoniale" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/07-camera-con-due-letti-singoli.jpg" data-caption="Camera con due letti singoli"><img src="assets/img/foto/thumb/07-camera-con-due-letti-singoli.jpg" srcset="assets/img/foto/thumb/07-camera-con-due-letti-singoli.jpg 640w, assets/img/foto/07-camera-con-due-letti-singoli.jpg 1024w" sizes="50vw" alt="Camera con due letti singoli" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/08-zona-studio-con-scrivania-e-tv.jpg" data-caption="Zona studio con scrivania e TV"><img src="assets/img/foto/thumb/08-zona-studio-con-scrivania-e-tv.jpg" srcset="assets/img/foto/thumb/08-zona-studio-con-scrivania-e-tv.jpg 640w, assets/img/foto/08-zona-studio-con-scrivania-e-tv.jpg 1024w" sizes="50vw" alt="Zona studio con scrivania e TV" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/09-angolo-scrivania.jpg" data-caption="Angolo scrivania"><img src="assets/img/foto/thumb/09-angolo-scrivania.jpg" srcset="assets/img/foto/thumb/09-angolo-scrivania.jpg 480w, assets/img/foto/09-angolo-scrivania.jpg 576w" sizes="50vw" alt="Angolo scrivania" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/10-ingresso.jpg" data-caption="Ingresso"><img src="assets/img/foto/thumb/10-ingresso.jpg" srcset="assets/img/foto/thumb/10-ingresso.jpg 360w, assets/img/foto/10-ingresso.jpg 432w" sizes="50vw" alt="Ingresso" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/11-bagno.jpg" data-caption="Bagno"><img src="assets/img/foto/thumb/11-bagno.jpg" srcset="assets/img/foto/thumb/11-bagno.jpg 480w, assets/img/foto/11-bagno.jpg 576w" sizes="50vw" alt="Bagno" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/12-bagno-con-lavabo-in-pietra.jpg" data-caption="Bagno con lavabo in pietra"><img src="assets/img/foto/thumb/12-bagno-con-lavabo-in-pietra.jpg" srcset="assets/img/foto/thumb/12-bagno-con-lavabo-in-pietra.jpg 480w, assets/img/foto/12-bagno-con-lavabo-in-pietra.jpg 576w" sizes="50vw" alt="Bagno con lavabo in pietra" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/13-secondo-bagno-con-doccia.jpg" data-caption="Secondo bagno con doccia"><img src="assets/img/foto/thumb/13-secondo-bagno-con-doccia.jpg" srcset="assets/img/foto/thumb/13-secondo-bagno-con-doccia.jpg 480w, assets/img/foto/13-secondo-bagno-con-doccia.jpg 576w" sizes="50vw" alt="Secondo bagno con doccia" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/14-secondo-bagno.jpg" data-caption="Secondo bagno"><img src="assets/img/foto/thumb/14-secondo-bagno.jpg" srcset="assets/img/foto/thumb/14-secondo-bagno.jpg 480w, assets/img/foto/14-secondo-bagno.jpg 576w" sizes="50vw" alt="Secondo bagno" loading="lazy"></a></li>
+        <li><a href="assets/img/foto/15-secondo-bagno-con-mobile-lavabo.jpg" data-caption="Secondo bagno con mobile lavabo"><img src="assets/img/foto/thumb/15-secondo-bagno-con-mobile-lavabo.jpg" srcset="assets/img/foto/thumb/15-secondo-bagno-con-mobile-lavabo.jpg 480w, assets/img/foto/15-secondo-bagno-con-mobile-lavabo.jpg 576w" sizes="50vw" alt="Secondo bagno con mobile lavabo" loading="lazy"></a></li>
+        <!-- GALLERY:END -->
+      </ul>
       </div>
     </section>
 
-    <section class="step">
-      <div class="step-header">
-        <div class="step-number">2</div>
-        <h2 class="step-title" data-i18n="step2_title">Il portone</h2>
+    <section class="section section-tinted" aria-labelledby="casa-title">
+      <h2 id="casa-title">Benvenuti</h2>
+      <div class="intro">
+        <p>Siamo <strong>Lucia e Marco</strong> e saremo felici di ospitarvi alla <strong>Casa del Cuore</strong>,
+          un appartamento al terzo piano nel cuore di <strong>Taranto</strong>. Curiamo ogni piccolo dettaglio per
+          rendere il vostro soggiorno il più piacevole possibile.</p>
+        <p>L'arrivo è semplice e in autonomia: dopo la prenotazione vi mandiamo tutte le istruzioni per entrare.</p>
       </div>
-      <div class="step-body">
-        <p data-i18n="step2_p1_html">Il condominio ha un portone sulla strada. <strong>Di giorno, tranne la domenica,
-            il portone è aperto e sorvegliato da un portiere</strong>: entrate pure e passate direttamente al passo
-          successivo.</p>
-        <div class="callout callout-info">
-          <div class="icon">🔑</div>
-          <div class="text" data-i18n="step2_note_html"><strong>Il locker esterno vi serve solo se il portone è
-              chiuso</strong>: di sera, di notte e la domenica.</div>
-        </div>
-        <figure class="photo-block">
-          <span class="photo-badge" data-i18n="badge_out">Solo se il portone è chiuso</span>
-          <img src="img/locker-esterno.jpeg" alt="Locker esterno agganciato al cancello" data-i18n-alt="alt_locker_out"
-            loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption data-i18n="cap_locker_out">Locker esterno — solo fuori orario e la domenica</figcaption>
-        </figure>
-      </div>
+      <ul class="facts">
+        <li><span class="facts-icon" aria-hidden="true">🏠</span><span>Appartamento al terzo piano</span></li>
+        <li><span class="facts-icon" aria-hidden="true">🔑</span><span>Self check-in con cassetta di sicurezza</span></li>
+        <li><span class="facts-icon" aria-hidden="true">📍</span><span>Taranto centro, vicino al Tribunale</span></li>
+        <li><span class="facts-icon" aria-hidden="true">🅿️</span><span>Parcheggio in strada nelle vie vicine</span></li>
+      </ul>
     </section>
 
-    <section class="step">
-      <div class="step-header">
-        <div class="step-number">3</div>
-        <h2 class="step-title" data-i18n="step3_title">L'appartamento</h2>
+    <section class="section" id="zona" aria-labelledby="zona-title">
+      <h2 id="zona-title">La zona</h2>
+      <p class="section-lead">Nel centro di Taranto, con tutto a portata di mano</p>
+      <div class="intro">
+        <p>La Casa del Cuore si trova in una <strong>zona centrale e molto commerciale di Taranto</strong>:
+          negozi, servizi e mercato sono vicini e avete tutto a portata di mano.</p>
       </div>
-      <div class="step-body">
-        <p data-i18n="step3_p1_html">Salite al <strong>terzo piano</strong> e cercate l'<strong>interno A</strong>.</p>
-        <p data-i18n="step3_p2_html">Accanto alla porta trovate il <strong>locker interno</strong>.</p>
-        <figure class="photo-block">
-          <img src="img/locker-interno.jpeg" alt="Locker interno con tastierino" data-i18n-alt="alt_locker_in"
-            loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption data-i18n="cap_locker_in">Locker interno — terzo piano, interno A</figcaption>
-        </figure>
-        <p data-i18n="step3_p3_html"><strong>La porta di casa ha due serrature: usate quella di sotto.</strong></p>
-      </div>
+      <ul class="places">
+        <li>
+          <span class="places-icon" aria-hidden="true">⚖️</span>
+          <h3>Tribunale di Taranto</h3>
+          <p>Siamo vicini al Tribunale: una soluzione comoda per chi viene a Taranto per lavoro,
+            per un'udienza o per qualche giorno di trasferta.</p>
+        </li>
+        <li>
+          <span class="places-icon" aria-hidden="true">🏊</span>
+          <h3>Stadio del Nuoto "Torre d'Ayala"</h3>
+          <p>Vicino alla piscina Torre d'Ayala: ideale per atleti, allenatori e famiglie
+            in trasferta per gare e manifestazioni di nuoto.</p>
+        </li>
+        <li>
+          <span class="places-icon" aria-hidden="true">🍊</span>
+          <h3>Mercato della frutta</h3>
+          <p>Poco lontano c'è un bel mercato con frutta e verdura fresca, perfetto per fare la spesa
+            e cucinare nella cucina attrezzata di casa.</p>
+        </li>
+        <li>
+          <span class="places-icon" aria-hidden="true">🛍️</span>
+          <h3>Negozi e servizi</h3>
+          <p>La zona è viva e commerciale: tutto quello che serve durante il soggiorno è a portata di mano.</p>
+        </li>
+      </ul>
     </section>
 
-    <section class="step">
-      <div class="step-header">
-        <div class="step-number">4</div>
-        <h2 class="step-title" data-i18n="step4_title">Una volta entrati</h2>
+    <section class="section section-tinted" id="dove" aria-labelledby="dove-title">
+      <h2 id="dove-title">Dove siamo</h2>
+      <p class="section-lead">Via Lucania 66, Taranto</p>
+      <div class="map">
+        <iframe title="Mappa: La Casa del Cuore, Via Lucania 66, Taranto"
+          src="https://www.google.com/maps?q=Via+Lucania+66+Taranto&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="step-body">
-        <p data-i18n="step4_p1_html">Appena entrati, sulla <strong>sinistra</strong> trovate una porta: è <strong>chiusa e videosorvegliata dall'interno</strong> e <strong>non fa parte della struttura</strong>.</p>
-      </div>
+      <p class="center"><a href="https://www.google.com/maps/search/?api=1&query=Via+Lucania+66+Taranto" target="_blank" rel="noopener">Apri in Google Maps</a></p>
     </section>
 
-    <div class="contact-box">
-      <h3 data-i18n="contact_title">Avete bisogno di aiuto?</h3>
-      <p data-i18n="contact_p_html">Siamo a vostra disposizione su WhatsApp.</p>
-      <p class="contact-footer" data-i18n="contact_footer">Vi auguriamo un soggiorno meraviglioso. Grazie per aver
-        scelto la Casa del Cuore!</p>
-    </div>
+    <section class="section cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Vi aspettiamo</h2>
+      <p>Per disponibilità e prenotazioni scriveteci su WhatsApp o chiamateci.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/393474300269" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.2 1.8.8 2.5.8 3.4.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Scrivici su WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+393474300269"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Chiama 347 430 0269</a>
+      </div>
+    </section>
 
   </main>
 
-  <script src="script/config.js"></script>
-  <script src="script/i18n.js"></script>
+  <footer class="footer">
+    <p>La Casa del Cuore · Via Lucania 66, Taranto · <a href="tel:+393474300269">347 430 0269</a></p>
+  </footer>
+
+  <!-- Lightbox: aperto da assets/js/gallery.js -->
+  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galleria foto">
+    <button class="lb-btn lb-close" type="button" aria-label="Chiudi">✕</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Foto precedente">‹</button>
+    <figure class="lb-figure">
+      <img class="lb-img" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Foto successiva">›</button>
+    <div class="lb-counter" aria-live="polite"></div>
+  </div>
+
+  <script src="assets/js/gallery.js"></script>
 </body>
 
 </html>
