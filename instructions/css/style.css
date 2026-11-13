@@ -49,11 +49,32 @@ strong { font-weight: 500; }
 header {
   text-align: center;
   padding: 2.8rem 1.25rem 4.2rem;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(232, 146, 58, 0.18) 0 70px, transparent 71px),
-    radial-gradient(circle at 88% 70%, rgba(127, 154, 92, 0.22) 0 90px, transparent 91px),
-    var(--cream-deep);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
   position: relative;
+  overflow: hidden;
+}
+header > * { position: relative; }
+/* luci sfocate in alto, con i colori già presenti nel sito */
+header::before {
+  content: '';
+  position: absolute; top: -40px; left: 0; right: 0; height: 360px;
+  background:
+    radial-gradient(circle at 15% 30%, rgba(232, 146, 58, 0.45) 0 60px, transparent 130px),
+    radial-gradient(circle at 82% 22%, rgba(127, 154, 92, 0.35) 0 50px, transparent 120px),
+    radial-gradient(circle at 60% 62%, rgba(232, 146, 58, 0.28) 0 40px, transparent 100px),
+    radial-gradient(circle at 92% 70%, rgba(127, 154, 92, 0.25) 0 35px, transparent 90px),
+    radial-gradient(circle at 40% 14%, #ffffff 0 45px, transparent 110px),
+    radial-gradient(circle at 5% 70%, rgba(127, 154, 92, 0.3) 0 55px, transparent 115px),
+    radial-gradient(circle at 25% 5%, rgba(232, 146, 58, 0.3) 0 40px, transparent 95px),
+    radial-gradient(circle at 70% 4%, #ffffff 0 60px, transparent 130px),
+    radial-gradient(circle at 48% 45%, rgba(207, 46, 62, 0.16) 0 50px, transparent 110px),
+    radial-gradient(circle at 96% 38%, rgba(232, 146, 58, 0.35) 0 45px, transparent 105px),
+    radial-gradient(circle at 10% 92%, #ffffff 0 50px, transparent 110px),
+    radial-gradient(circle at 36% 80%, rgba(127, 154, 92, 0.22) 0 38px, transparent 90px),
+    radial-gradient(circle at 75% 88%, rgba(232, 146, 58, 0.22) 0 42px, transparent 96px),
+    radial-gradient(circle at 55% 25%, rgba(127, 154, 92, 0.2) 0 34px, transparent 85px);
+  filter: blur(18px);
+  pointer-events: none;
 }
 header::after {
   content: '';
@@ -63,11 +84,10 @@ header::after {
 }
 .logo {
   width: min(86vw, 340px);
-  aspect-ratio: 1280 / 905;
+  aspect-ratio: 756 / 737;
   margin: 0 auto;
-  border-radius: 24px;
-  background: var(--white) url('../img/logo.jpeg') center / contain no-repeat;
-  box-shadow: var(--shadow);
+  background: url('../img/casa-cuore.webp') center / contain no-repeat;
+  mix-blend-mode: multiply; /* il fondo del logo si fonde con l'header */
 }
 .header-subtitle {
   margin-top: 1.2rem;
