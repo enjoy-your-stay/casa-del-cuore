@@ -67,12 +67,32 @@ h2 { font-size: clamp(1.9rem, 5vw, 2.5rem); text-align: center; }
 /* ── HERO ── */
 .hero {
   position: relative;
-  background:
-    radial-gradient(circle at 12% 25%, rgba(232, 146, 58, 0.18) 0 90px, transparent 91px),
-    radial-gradient(circle at 90% 75%, rgba(127, 154, 92, 0.22) 0 120px, transparent 121px),
-    var(--cream-deep);
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
   padding: 0 16px 4.5rem;
   text-align: center;
+}
+/* luci sfocate in alto, con i colori già presenti nel sito */
+.hero::before {
+  content: '';
+  position: absolute; top: -40px; left: 0; right: 0; height: 360px;
+  background:
+    radial-gradient(circle at 15% 30%, rgba(232, 146, 58, 0.45) 0 60px, transparent 130px),
+    radial-gradient(circle at 82% 22%, rgba(127, 154, 92, 0.35) 0 50px, transparent 120px),
+    radial-gradient(circle at 60% 62%, rgba(232, 146, 58, 0.28) 0 40px, transparent 100px),
+    radial-gradient(circle at 92% 70%, rgba(127, 154, 92, 0.25) 0 35px, transparent 90px),
+    radial-gradient(circle at 40% 14%, #ffffff 0 45px, transparent 110px),
+    radial-gradient(circle at 5% 70%, rgba(127, 154, 92, 0.3) 0 55px, transparent 115px),
+    radial-gradient(circle at 25% 5%, rgba(232, 146, 58, 0.3) 0 40px, transparent 95px),
+    radial-gradient(circle at 70% 4%, #ffffff 0 60px, transparent 130px),
+    radial-gradient(circle at 48% 45%, rgba(207, 46, 62, 0.16) 0 50px, transparent 110px),
+    radial-gradient(circle at 96% 38%, rgba(232, 146, 58, 0.35) 0 45px, transparent 105px),
+    radial-gradient(circle at 10% 92%, #ffffff 0 50px, transparent 110px),
+    radial-gradient(circle at 36% 80%, rgba(127, 154, 92, 0.22) 0 38px, transparent 90px),
+    radial-gradient(circle at 75% 88%, rgba(232, 146, 58, 0.22) 0 42px, transparent 96px),
+    radial-gradient(circle at 55% 25%, rgba(127, 154, 92, 0.2) 0 34px, transparent 85px);
+  filter: blur(18px);
+  pointer-events: none;
 }
 .hero::after {
   content: '';
@@ -80,14 +100,12 @@ h2 { font-size: clamp(1.9rem, 5vw, 2.5rem); text-align: center; }
   background: var(--cream);
   clip-path: ellipse(60% 100% at 50% 100%);
 }
-.hero-inner { max-width: 640px; margin: 0 auto; padding-top: 2.5rem; }
+.hero-inner { position: relative; max-width: 640px; margin: 0 auto; padding-top: 2.5rem; }
 .hero h1 { line-height: 0; }
 .hero-logo {
   width: min(70vw, 300px); height: auto;
   margin: 0 auto;
-  border-radius: 24px;
-  background: var(--white);
-  box-shadow: var(--shadow);
+  mix-blend-mode: multiply; /* il fondo del logo si fonde con la sezione */
 }
 .hero-tagline {
   margin-top: 0.4rem;
